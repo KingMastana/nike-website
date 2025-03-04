@@ -8,10 +8,10 @@ function Home() {
       <section className="padding-l wide:padding-r padding-b">
         <Hero />
       </section>
-      <section className="padding">
+      <section id='products' className="padding">
         <PopularProducts />
       </section>
-      <section className="padding">
+      <section id='about-us' className="padding">
         <SuperQuality />
       </section>
       <section className="padding-x py-10">

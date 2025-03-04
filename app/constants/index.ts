@@ -35,7 +35,13 @@ export const statistics = [
     { value: '250k+', label: 'Customers' },
 ];
 
-export const products = [
+export interface ProductType {
+    imgURL: StaticImageData;
+    name: string;
+    price: string;
+}
+
+export const products: ProductType[] = [
     {
         imgURL: shoe4,
         name: "Nike Air Jordan-01",
@@ -58,7 +64,13 @@ export const products = [
     },
 ];
 
-export const services = [
+export interface ServiceType {
+    imgURL: StaticImageData | string;
+    label: string;
+    subtext: string;
+}
+
+export const services: ServiceType[] = [
     {
         imgURL: truckFast,
         label: "Free shipping",
