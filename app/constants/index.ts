@@ -88,7 +88,14 @@ export const services: ServiceType[] = [
     },
 ];
 
-export const reviews = [
+export interface ReviewType {
+    imgURL: StaticImageData | string;
+    customerName: string;
+    rating: number;
+    feedback: string;
+}
+
+export const reviews: ReviewType[] = [
     {
         imgURL: customer1,
         customerName: 'Morich Brown',
