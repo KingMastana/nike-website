@@ -14,8 +14,8 @@
 
 @theme {
   /* Font families */
-  --font-palanquin: "Palanquin", sans-serif;
-  --font-montserrat: "Montserrat", sans-serif;
+  --font-palanquin: var(--font-palanquin), sans-serif;
+  --font-montserrat: var(--font-montserrat), sans-serif;
 
   --font-size-xs: 12px;
   --font-size-sm: 14px;
@@ -61,6 +61,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-sans: var(--font-montserrat);
+  --font-palanquin: var(--font-palanquin);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -73,7 +75,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-palanquin), var(--font-montserrat), sans-serif;
 }
 
 @layer components {
