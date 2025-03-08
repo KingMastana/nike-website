@@ -142,7 +142,12 @@ export const footerLinks = [
     },
 ];
 
-export const socialMedia = [
+export interface SocialMediaType {
+    src: StaticImageData, 
+    alt: string,
+}
+
+export const socialMedia: SocialMediaType[] = [
     { src: facebook, alt: "facebook logo" },
     { src: twitter, alt: "twitter logo" },
     { src: instagram, alt: "instagram logo" },

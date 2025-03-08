@@ -7,6 +7,7 @@ interface ButtonProps {
   backgroundColor?: string;
   textColor?: string;
   borderColor?: string;
+  fullWidth?: boolean,
   onClick?: () => void;
   type?: "button" | "submit" | "reset";
   ariaLabel?: string;
@@ -18,10 +19,11 @@ const Button = ({
   backgroundColor,
   textColor,
   borderColor,
+  fullWidth,
 }: ButtonProps) => {
   return (
     <button
-      className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat rounded-full text-lg leading-none ${
+      className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none rounded-full ${fullWidth && 'w-full'}  ${
         backgroundColor
           ? `${backgroundColor} ${textColor} ${borderColor}`
           : "bg-coral-red border-coral-red text-white"

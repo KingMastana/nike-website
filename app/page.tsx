@@ -14,7 +14,7 @@ function Home() {
       <section id='about-us' className="padding">
         <SuperQuality />
       </section>
-      <section className="padding-x py-10">
+      <section id='services' className="padding-x py-10">
         <Services />
       </section>
       <section className="padding">
@@ -23,7 +23,7 @@ function Home() {
       <section className="bg-pale-blue padding">
         <CustomerReviews />
       </section>
-      <section className="padding-x sm:py-32 py-16 w-full">
+      <section id="contact-us" className="padding-x sm:py-32 py-16 w-full">
         <Subscribe />
       </section>
       <section className="bg-black padding-x padding-t pb-8">
