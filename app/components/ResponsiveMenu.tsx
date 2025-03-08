@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 
-const ResponsiveMenu = ({ open }) => {
+const ResponsiveMenu = ({ open, onClose }) => {
   return (
     <AnimatePresence mode="wait">
       {open && (
@@ -14,16 +14,16 @@ const ResponsiveMenu = ({ open }) => {
           <div className="text-xl font-semibold uppercase bg-coral-red text-white py-10 m-6 rounded-3xl">
             <ul className="flex flex-col justify-center items-center gap-10">
               <li>
-                <Link href="/">Home</Link>
+                <Link href="/" onClick={onClose}>Home</Link>
               </li>
               <li>
-                <Link href="#about-us">About</Link>
+                <Link href="#about-us" onClick={onClose}>About</Link>
               </li>
               <li>
-                <Link href="#services">Services</Link>
+                <Link href="#services" onClick={onClose}>Services</Link>
               </li>
               <li>
-                <Link href="">Contact</Link>
+                <Link href="" onClick={onClose}>Contact</Link>
               </li>
             </ul>
           </div>

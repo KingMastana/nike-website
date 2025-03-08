@@ -40,7 +40,7 @@ const Nav = () => {
         </div>
       </nav>
       {/* Mobile Sidebar */}
-      <ResponsiveMenu open={open} />
+      <ResponsiveMenu open={open} onClose={() => setOpen(false)} />
     </header>
   );
 };
